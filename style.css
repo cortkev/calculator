@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+}
+#container{
+    width: 300px;
+    margin: auto;
+    background-color: #bd93f9;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'result result result result'
+    'addition subtraction multiplication division'
+    'digit7 digit8 digit9 equal'
+    'digit4 digit5 digit6 equal'
+    'digit1 digit2 digit3 equal'
+    'clear clear digit0 equal';
+}
+
+#display{
+    grid-area: result;
+    border-radius: 6px;
+    height: 45px;
+    background-color: #8be9fd;
+    color: #282a36;
+    font-size: 30px;
+}
+
+.key{
+    height: 50px;
+    border-radius: 3px;
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.equal-key{
+    height: 215px;
+    border-radius: 3px;
+    font-size: 30px;
+    line-height: 215px;
+    cursor: pointer;
+}
+
+.plus{
+    grid-area: addition;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+.minus{
+    grid-area: subtraction;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+.multiply{
+    grid-area: multiplication;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+.divide{
+    grid-area: division;
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+.clear-key{
+    grid-area: clear;
+    background-color: #282a36;
+    color: #ff79c6;
+}
+.digit-0{
+    grid-area: digit0;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-1{
+    grid-area: digit1;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-2{
+    grid-area: digit2;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-3{
+    grid-area: digit3;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-4{
+    grid-area: digit4;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-5{
+    grid-area: digit5;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-6{
+    grid-area: digit6;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-7{
+    grid-area: digit7;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-8{
+    grid-area: digit8;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.digit-9{
+    grid-area: digit9;
+    background-color: #44475a;
+    color: #f8f8f2;
+}
+.equal-sign{
+    grid-area: equal;
+    background-color: #282a36;
+    color: #bd93f9;
+}
