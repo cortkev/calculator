@@ -18,7 +18,10 @@ function  updateDisplay(newValue){
         case '7':
         case '8':
         case '9':
-            if(opCount > 0){
+            if(d.innerHTML == "ERR" || d.innerHTML == "NaN"){
+                break;
+            }
+            else if(opCount > 0){
                 if(counter == 0){  
                     d.innerHTML = '';   //remove number, only when entering new number
                 }
@@ -57,27 +60,25 @@ function  updateDisplay(newValue){
             else{
                 opCount+=1;
                 op = newValue; //saves first operator
-                console.log("op else: " + opCount, a, b, op); 
+                console.log("op else: " + opCount, a, b, op);
             }
             break;
         case '=':
             //if the the display is empty and '=' is pressed nothing will happen
-            if(d.innerHTML == ' '){
+            if(d.innerHTML == ''){
                 d.innerHTML = ''
             }
-            //will output "ERR" if it ends with an operator
-            if(d.innerHTML !== '')
+            //error if no operator
+            else if(op == '')
             {
-                if(d.innerHTML.endsWith('+') || d.innerHTML.endsWith('-') || 
-                d.innerHTML.endsWith('*') || d.innerHTML.endsWith('/')){
-                    d.innerHTML = 'ERR';
-                }
-                else{
+                d.innerHTML = 'ERR'
+            }
+            else{
                     d.innerHTML = operate(a, b);
                 }
-            }
+            
     }
-
+    //take in two numbers and solve based on operator
     function operate(a, b){ 
         switch(op){
             case '+':

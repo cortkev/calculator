@@ -122,3 +122,10 @@ body{
     background-color: #282a36;
     color: #bd93f9;
 }
+.title{
+    height: 100px;
+    background-color: #bd93f9;
+    text-align: center;
+    font-size: 90px;
+    color: #282a36;
+}
